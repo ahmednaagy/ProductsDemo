@@ -44,7 +44,7 @@ class CustomInputView: UIView {
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
 
-        setupTextField()
+        setupViews()
     }
 
     // MARK: - Public Methods
@@ -60,11 +60,11 @@ class CustomInputView: UIView {
     func setError(_ error: String?) {
         if let error = error {
             animateErrorView()
-            animateTextFieldBorderColor(toColor: UIColor.red.cgColor)
+            animateTextFieldBorderColor(toColor: UIColor.red)
             errorLabel.text = error
         } else {
             resetErrorView()
-            animateTextFieldBorderColor(toColor: UIColor.gray.cgColor)
+            animateTextFieldBorderColor(toColor: UIColor.gray)
         }
     }
 
@@ -125,18 +125,19 @@ class CustomInputView: UIView {
     }
 
 
-    private func setupTextField() {
+    private func setupViews() {
         textField.addTarget(self, action: #selector(textFieldDidEndEditing(_:)), for: .editingDidEnd)
         // Set corner radius, border color, and width for the text field
         textField.layer.cornerRadius = 8.0
         textField.layer.borderColor = UIColor.gray.cgColor
-        textField.layer.borderWidth = 0.5
+        textField.layer.borderWidth = 1
         textField.delegate = self
+        errorLabel.alpha = 0.0
     }
 
     // MARK: - Animation
 
-    private func animateTextFieldBorderColor(toColor color: CGColor) {
+    private func animateTextFieldBorderColor(toColor color: UIColor) {
         let animation = CABasicAnimation(keyPath: "borderColor")
         animation.fromValue = textField.layer.borderColor
         animation.toValue = color
@@ -147,7 +148,7 @@ class CustomInputView: UIView {
         // Update layer properties immediately to avoid flickering during animation
         CATransaction.begin()
         CATransaction.setDisableActions(true)
-        textField.layer.borderColor = color
+        textField.layer.borderColor = color.cgColor
         CATransaction.commit()
     }
 
@@ -156,7 +157,7 @@ class CustomInputView: UIView {
 extension CustomInputView: UITextFieldDelegate {
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        animateTextFieldBorderColor(toColor: UIColor.purple.cgColor)
+        animateTextFieldBorderColor(toColor: UIColor(red: 111/255.0, green: 1/255.0, blue: 228/255.0, alpha: 1.0))
     }
 
     func textFieldDidEndEditing(_ textField: UITextField) {

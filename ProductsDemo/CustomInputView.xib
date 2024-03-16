@@ -21,24 +21,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bFI-ME-aGG">
-                    <rect key="frame" x="20" y="20" width="521" height="108"/>
+                    <rect key="frame" x="20" y="8" width="521" height="132"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zr-VD-1Jj">
-                            <rect key="frame" x="0.0" y="0.0" width="521" height="50"/>
+                            <rect key="frame" x="0.0" y="0.0" width="521" height="44"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EAw-65-H4X">
-                            <rect key="frame" x="0.0" y="60" width="521" height="48"/>
+                            <rect key="frame" x="0.0" y="54" width="521" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="Wa3-2V-pXe"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                         </textField>
-                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqK-ye-dTw">
-                            <rect key="frame" x="0.0" y="108" width="521" height="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqK-ye-dTw">
+                            <rect key="frame" x="0.0" y="112" width="521" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="oJe-uW-ZBR"/>
                             </constraints>
@@ -52,8 +52,8 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="bFI-ME-aGG" secondAttribute="bottom" constant="20" id="Kdv-rs-wbX"/>
-                <constraint firstItem="bFI-ME-aGG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="RGb-YK-yZh"/>
+                <constraint firstAttribute="bottom" secondItem="bFI-ME-aGG" secondAttribute="bottom" constant="8" id="Kdv-rs-wbX"/>
+                <constraint firstItem="bFI-ME-aGG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="RGb-YK-yZh"/>
                 <constraint firstItem="bFI-ME-aGG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Rdt-hX-8Yq"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bFI-ME-aGG" secondAttribute="trailing" constant="20" id="oVG-mq-QQQ"/>
             </constraints>
