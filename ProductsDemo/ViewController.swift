@@ -16,15 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Example 1:
-        let customInputView1 = CustomInputView()
-        customInputView1.title = "Username"
-        parentStackView.addArrangedSubview(customInputView1)
+        let phoneNumberInputView = CustomInputView()
+        phoneNumberInputView.title = "Please enter Phone number"
+        phoneNumberInputView.placeholder = "Enter Phone number"
+        phoneNumberInputView.validation = PhoneNumberValidation()
+        parentStackView.addArrangedSubview(phoneNumberInputView)
 
-        // Example 2:
-        let customInputView2 = CustomInputView()
-        customInputView2.title = "Password"
-        parentStackView.addArrangedSubview(customInputView2)
     }
 }
 

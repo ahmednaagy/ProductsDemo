@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol InputValidation {
+    func validate(_ text: String?) -> String?
+}
+
 class CustomInputView: UIView {
 
 
@@ -30,7 +34,7 @@ class CustomInputView: UIView {
         }
     }
 
-    var validationRule: ((String?) -> String?)?
+    var validation: InputValidation?
 
 
     // MARK: - Initialization
@@ -50,28 +54,28 @@ class CustomInputView: UIView {
         view.frame = self.bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
-        
+
         setupTextField()
     }
 
     // MARK: - Public Methods
 
-     func setTitle(_ title: String) {
-         titleLabel.text = title
-     }
+    func setTitle(_ title: String) {
+        titleLabel.text = title
+    }
 
-     func setText(_ text: String) {
-         textField.text = text
-     }
+    func setText(_ text: String) {
+        textField.text = text
+    }
 
-     func setError(_ error: String?) {
-         errorLabel.text = error
-         errorLabel.isHidden = error == nil
-     }
+    func setError(_ error: String?) {
+        errorLabel.text = error
+        errorLabel.isHidden = error == nil
+    }
 
-     func getText() -> String? {
-         return textField.text
-     }
+    func getText() -> String? {
+        return textField.text
+    }
 
 
     private func loadViewFromNib() -> UIView? {
@@ -82,20 +86,34 @@ class CustomInputView: UIView {
 
     private func setupTextField() {
         textField.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
+        textField.delegate = self
     }
 
     // MARK: - Text Field Validation
 
     @objc private func textFieldEditingChanged(_ sender: UITextField) {
-        validateText(sender.text)
+        // No need to validate here as we are handling validation on textFieldDidEndEditing
+    }
+}
+
+extension CustomInputView: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        validateText(textField.text) // Validate text when editing ends
     }
 
     private func validateText(_ text: String?) {
-        // Perform your validation logic here
-        if let text = text, text.isEmpty {
-            setError("Field cannot be empty")
-        } else {
+        guard let validation = validation else {
             setError(nil)
+            return
         }
+
+        let errorMessage = validation.validate(text)
+        errorLabel.isHidden = errorMessage == nil // Update isHidden property based on error message
+        setError(errorMessage)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() // Hide keyboard when return key is pressed
+        return true
     }
 }

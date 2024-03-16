@@ -15,6 +15,8 @@
 		D07032D02BA4C15F00D1090D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07032CE2BA4C15F00D1090D /* LaunchScreen.storyboard */; };
 		D07032D82BA50CC400D1090D /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07032D72BA50CC400D1090D /* CustomInputView.swift */; };
 		D07032DC2BA50CF800D1090D /* CustomInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07032DB2BA50CF800D1090D /* CustomInputView.xib */; };
+		D07032DF2BA5246900D1090D /* PhoneNumberValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07032DE2BA5246900D1090D /* PhoneNumberValidation.swift */; };
+		D07032E12BA52A0000D1090D /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07032E02BA52A0000D1090D /* InputViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		D07032D12BA4C15F00D1090D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07032D72BA50CC400D1090D /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		D07032DB2BA50CF800D1090D /* CustomInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputView.xib; sourceTree = "<group>"; };
+		D07032DE2BA5246900D1090D /* PhoneNumberValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidation.swift; sourceTree = "<group>"; };
+		D07032E02BA52A0000D1090D /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		D07032C22BA4C15D00D1090D /* ProductsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D07032E02BA52A0000D1090D /* InputViewModel.swift */,
+				D07032DD2BA5245B00D1090D /* Validations */,
 				D07032C32BA4C15D00D1090D /* AppDelegate.swift */,
 				D07032C52BA4C15D00D1090D /* SceneDelegate.swift */,
 				D07032C72BA4C15D00D1090D /* ViewController.swift */,
@@ -71,6 +77,14 @@
 				D07032D12BA4C15F00D1090D /* Info.plist */,
 			);
 			path = ProductsDemo;
+			sourceTree = "<group>";
+		};
+		D07032DD2BA5245B00D1090D /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				D07032DE2BA5246900D1090D /* PhoneNumberValidation.swift */,
+			);
+			path = Validations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07032DF2BA5246900D1090D /* PhoneNumberValidation.swift in Sources */,
 				D07032C82BA4C15D00D1090D /* ViewController.swift in Sources */,
 				D07032C42BA4C15D00D1090D /* AppDelegate.swift in Sources */,
+				D07032E12BA52A0000D1090D /* InputViewModel.swift in Sources */,
 				D07032D82BA50CC400D1090D /* CustomInputView.swift in Sources */,
 				D07032C62BA4C15D00D1090D /* SceneDelegate.swift in Sources */,
 			);
