@@ -17,3 +17,18 @@ struct PhoneNumberValidation: InputValidation {
         return nil // No error message if validation passes
     }
 }
+
+// Example input validations
+struct UsernameValidation: InputValidation {
+    func validate(_ text: String?) -> String? {
+        guard let text = text else { return "Username is required" }
+        return text.count >= 6 ? nil : "Username should be at least 6 characters long"
+    }
+}
+
+struct PasswordValidation: InputValidation {
+    func validate(_ text: String?) -> String? {
+        guard let text = text else { return "Password is required" }
+        return text.count >= 8 ? nil : "Password should be at least 8 characters long"
+    }
+}

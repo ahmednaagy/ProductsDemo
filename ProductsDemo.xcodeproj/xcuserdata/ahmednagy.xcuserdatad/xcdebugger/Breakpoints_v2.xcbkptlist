@@ -3,4 +3,150 @@
    uuid = "CCE5939C-BB5E-4FAA-90C5-C79764E008D2"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "450C0137-3F63-4AE9-B4CF-28FD6313670E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "submitButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1131C07E-83E6-4424-B900-CE9A154933A5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "submitButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A93505FF-905A-41F8-ADEF-469DD774AFDB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "submitButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14525D82-B271-47B9-A034-63615CFE15E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/CustomInputView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "validateAndHandleError()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "14525D82-B271-47B9-A034-63615CFE15E3 - ac3fc4604f8159c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.CustomInputView.validateAndHandleError() -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/CustomInputView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "14525D82-B271-47B9-A034-63615CFE15E3 - ac3fc4604f8159c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.CustomInputView.validateAndHandleError() -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/CustomInputView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35C1D933-B481-4705-A98E-1B35D26B7948"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/CustomInputView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "35C1D933-B481-4705-A98E-1B35D26B7948 - 905b847cf5c54a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.CustomInputView.textFieldShouldReturn(__C.UITextField) -&gt; Swift.Bool"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/CustomInputView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "35C1D933-B481-4705-A98E-1B35D26B7948 - 905b847cf5c54a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.CustomInputView.textFieldShouldReturn(__C.UITextField) -&gt; Swift.Bool"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/CustomInputView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
