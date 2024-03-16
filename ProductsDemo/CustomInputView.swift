@@ -22,18 +22,6 @@ class CustomInputView: UIView {
 
     // MARK: - Properties
 
-    var title: String? {
-        didSet {
-            titleLabel.text = title
-        }
-    }
-
-    var placeholder: String? {
-        didSet {
-            textField.placeholder = placeholder
-        }
-    }
-
     var validation: InputValidation?
     var emptyFieldErrorMessage: String?
 
@@ -65,8 +53,8 @@ class CustomInputView: UIView {
         titleLabel.text = title
     }
 
-    func setText(_ text: String) {
-        textField.text = text
+    func setPlaceholder(_ placeholder: String) {
+        textField.placeholder = placeholder
     }
 
     func setError(_ error: String?) {

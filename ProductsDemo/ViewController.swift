@@ -30,8 +30,8 @@ class ViewController: UIViewController {
 
     func addInputView(with title: String, placeholder: String, validation: InputValidation, emptyFieldErrorMessage: String) {
         let inputView = CustomInputView()
-        inputView.title = title
-        inputView.placeholder = placeholder
+        inputView.setTitle(title)
+        inputView.setPlaceholder(placeholder)
         inputView.validation = validation
         inputView.emptyFieldErrorMessage = emptyFieldErrorMessage
         parentStackView.addArrangedSubview(inputView)
