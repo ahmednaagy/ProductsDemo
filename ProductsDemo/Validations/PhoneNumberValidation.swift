@@ -7,6 +7,13 @@
 
 import Foundation
 
+
+extension String {
+    func validate(text: Self) {
+        
+    }
+}
+
 struct PhoneNumberValidation: InputValidation {
     func validate(_ text: String?) -> String? {
         guard let phoneNumber = text, !phoneNumber.isEmpty else {
@@ -27,6 +34,13 @@ struct UsernameValidation: InputValidation {
 }
 
 struct PasswordValidation: InputValidation {
+    func validate(_ text: String?) -> String? {
+        guard let text = text else { return "Password is required" }
+        return text.count >= 8 ? nil : "Password should be at least 8 characters long"
+    }
+}
+
+struct NationalIDValidation: InputValidation {
     func validate(_ text: String?) -> String? {
         guard let text = text else { return "Password is required" }
         return text.count >= 8 ? nil : "Password should be at least 8 characters long"

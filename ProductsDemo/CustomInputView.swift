@@ -44,7 +44,7 @@ class CustomInputView: UIView {
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
 
-        setupViews()
+        setupUI()
     }
 
     // MARK: - Public Methods
@@ -125,7 +125,7 @@ class CustomInputView: UIView {
     }
 
 
-    private func setupViews() {
+    private func setupUI() {
         textField.addTarget(self, action: #selector(textFieldDidEndEditing(_:)), for: .editingDidEnd)
         // Set corner radius, border color, and width for the text field
         textField.layer.cornerRadius = 8.0
@@ -141,11 +141,10 @@ class CustomInputView: UIView {
         let animation = CABasicAnimation(keyPath: "borderColor")
         animation.fromValue = textField.layer.borderColor
         animation.toValue = color
-        animation.duration = 0.2 // Reduce animation duration for a quicker transition
-        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut) // Use ease-in-ease-out timing function for a smoother animation
+        animation.duration = 0.2
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         textField.layer.add(animation, forKey: "borderColor")
 
-        // Update layer properties immediately to avoid flickering during animation
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         textField.layer.borderColor = color.cgColor
@@ -171,7 +170,7 @@ extension CustomInputView: UITextFieldDelegate {
         }
 
         let errorMessage = validation.validate(text)
-        errorLabel.isHidden = errorMessage == nil // Update isHidden property based on error message
+        errorLabel.isHidden = (errorMessage == nil)
         setError(errorMessage)
     }
 

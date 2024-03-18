@@ -18,10 +18,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Add input views to the stack view
         addInputView(with: "Username", placeholder: "Enter username", validation: UsernameValidation(), emptyFieldErrorMessage: "Username is required")
         addInputView(with: "Password", placeholder: "Enter password", validation: PasswordValidation(), emptyFieldErrorMessage: "Password is required")
-        // Add more input views as needed
+        addInputView(with: "National ID", placeholder: "Enter National ID", validation: PasswordValidation(), emptyFieldErrorMessage: "National ID is required")
+        addInputView(with: "Email", placeholder: "Enter Email", validation: PasswordValidation(), emptyFieldErrorMessage: "Email is required")
 
         addSubmitButton()
     }
@@ -87,6 +87,5 @@ class ViewController: UIViewController {
     func performSubmitAction() {
         print("Form submitted successfully")
     }
-
 
 }
