@@ -50,18 +50,10 @@ class ViewController: UIViewController {
         submitButton = UIButton(type: .system)
         submitButton.setTitle("Submit", for: .normal)
         submitButton.addTarget(self, action: #selector(submitButtonTapped(_:)), for: .touchUpInside)
-        parentStackView.addArrangedSubview(submitButton)
-
-        // Add constraints to the stack view
-        parentStackView.translatesAutoresizingMaskIntoConstraints = false
-        parentStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        parentStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        parentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-        // Add bottom constraint if needed
-
         // Add constraints to the submit button
         submitButton.translatesAutoresizingMaskIntoConstraints = false
         submitButton.heightAnchor.constraint(equalToConstant: 44).isActive = true // Adjust height as needed
+        parentStackView.addArrangedSubview(submitButton)
     }
 
 

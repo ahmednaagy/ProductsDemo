@@ -29,17 +29,17 @@
             <rect key="frame" x="0.0" y="0.0" width="574" height="310"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-JN-dIX">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-JN-dIX">
                     <rect key="frame" x="20" y="67" width="534" height="201"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Financed Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47C-Qk-qHJ">
-                            <rect key="frame" x="0.0" y="0.0" width="534" height="26.666666666666668"/>
+                            <rect key="frame" x="0.0" y="0.0" width="534" height="59.333333333333336"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="17h-ux-ikI">
-                            <rect key="frame" x="0.0" y="34.666666666666679" width="534" height="110.33333333333331"/>
+                            <rect key="frame" x="0.0" y="67.333333333333343" width="534" height="77.666666666666657"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xv6-EW-Qla">
                                     <rect key="frame" x="0.0" y="0.0" width="534" height="48"/>
@@ -59,7 +59,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ym-pm-inC">
-                                    <rect key="frame" x="0.0" y="51.999999999999986" width="534" height="58.333333333333329"/>
+                                    <rect key="frame" x="0.0" y="51.999999999999993" width="534" height="25.666666666666664"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" red="0.94509803920000002" green="0.29411764709999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
