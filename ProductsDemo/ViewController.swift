@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var parentStackView: UIStackView!
 
@@ -18,6 +17,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        addCustomInputWithButtonView()
         addInputView(with: "Username", placeholder: "Enter username", validation: UsernameValidation(), emptyFieldErrorMessage: "Username is required")
         addInputView(with: "Password", placeholder: "Enter password", validation: PasswordValidation(), emptyFieldErrorMessage: "Password is required")
         addInputView(with: "National ID", placeholder: "Enter National ID", validation: PasswordValidation(), emptyFieldErrorMessage: "National ID is required")
@@ -36,6 +36,14 @@ class ViewController: UIViewController {
         inputView.emptyFieldErrorMessage = emptyFieldErrorMessage
         parentStackView.addArrangedSubview(inputView)
         inputViews.append(inputView)
+    }
+
+    fileprivate func addCustomInputWithButtonView() {
+        // Create and configure MoneyCalculatorView instances
+        let firstMoneyCalculatorView = CustomInputWithButtonView()
+        firstMoneyCalculatorView.delegate = self
+        firstMoneyCalculatorView.validation = PasswordValidation()
+        parentStackView.addArrangedSubview(firstMoneyCalculatorView)
     }
 
     func addSubmitButton() {
@@ -88,4 +96,12 @@ class ViewController: UIViewController {
         print("Form submitted successfully")
     }
 
+}
+
+// MARK: - Action Button Delegate
+
+extension ViewController: MoneyCalculatorViewDelegate {
+    func calculateButtonTapped() {
+        print("Button Tapped")
+    }
 }

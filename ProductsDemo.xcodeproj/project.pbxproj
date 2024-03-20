@@ -17,6 +17,9 @@
 		D07032DC2BA50CF800D1090D /* CustomInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07032DB2BA50CF800D1090D /* CustomInputView.xib */; };
 		D07032DF2BA5246900D1090D /* PhoneNumberValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07032DE2BA5246900D1090D /* PhoneNumberValidation.swift */; };
 		D07032E12BA52A0000D1090D /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07032E02BA52A0000D1090D /* InputViewModel.swift */; };
+		D07033192BAB10CA00D1090D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07033182BAB10CA00D1090D /* UIView.swift */; };
+		D070331B2BAB111B00D1090D /* CustomInputWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070331A2BAB111B00D1090D /* CustomInputWithButtonView.swift */; };
+		D070331D2BAB112300D1090D /* CustomInputWithButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +32,12 @@
 		D07032CF2BA4C15F00D1090D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07032D12BA4C15F00D1090D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07032D72BA50CC400D1090D /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
-		D07032DB2BA50CF800D1090D /* CustomInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputView.xib; sourceTree = "<group>"; };
+		D07032DB2BA50CF800D1090D /* CustomInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomInputView.xib; path = ../CustomInputView.xib; sourceTree = "<group>"; };
 		D07032DE2BA5246900D1090D /* PhoneNumberValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidation.swift; sourceTree = "<group>"; };
 		D07032E02BA52A0000D1090D /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
+		D07033182BAB10CA00D1090D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D070331A2BAB111B00D1090D /* CustomInputWithButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputWithButtonView.swift; sourceTree = "<group>"; };
+		D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputWithButtonView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +70,14 @@
 		D07032C22BA4C15D00D1090D /* ProductsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D07032E02BA52A0000D1090D /* InputViewModel.swift */,
+				D07033172BAB10BC00D1090D /* Extensions */,
+				D07033152BAB0FDC00D1090D /* Views */,
+				D07033162BAB10A200D1090D /* ViewModels */,
 				D07032DD2BA5245B00D1090D /* Validations */,
 				D07032C32BA4C15D00D1090D /* AppDelegate.swift */,
 				D07032C52BA4C15D00D1090D /* SceneDelegate.swift */,
 				D07032C72BA4C15D00D1090D /* ViewController.swift */,
 				D07032C92BA4C15D00D1090D /* Main.storyboard */,
-				D07032D72BA50CC400D1090D /* CustomInputView.swift */,
-				D07032DB2BA50CF800D1090D /* CustomInputView.xib */,
 				D07032CC2BA4C15F00D1090D /* Assets.xcassets */,
 				D07032CE2BA4C15F00D1090D /* LaunchScreen.storyboard */,
 				D07032D12BA4C15F00D1090D /* Info.plist */,
@@ -85,6 +91,33 @@
 				D07032DE2BA5246900D1090D /* PhoneNumberValidation.swift */,
 			);
 			path = Validations;
+			sourceTree = "<group>";
+		};
+		D07033152BAB0FDC00D1090D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D07032D72BA50CC400D1090D /* CustomInputView.swift */,
+				D07032DB2BA50CF800D1090D /* CustomInputView.xib */,
+				D070331A2BAB111B00D1090D /* CustomInputWithButtonView.swift */,
+				D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D07033162BAB10A200D1090D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D07032E02BA52A0000D1090D /* InputViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D07033172BAB10BC00D1090D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D07033182BAB10CA00D1090D /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +182,7 @@
 				D07032CD2BA4C15F00D1090D /* Assets.xcassets in Resources */,
 				D07032DC2BA50CF800D1090D /* CustomInputView.xib in Resources */,
 				D07032CB2BA4C15D00D1090D /* Main.storyboard in Resources */,
+				D070331D2BAB112300D1090D /* CustomInputWithButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,9 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D070331B2BAB111B00D1090D /* CustomInputWithButtonView.swift in Sources */,
 				D07032DF2BA5246900D1090D /* PhoneNumberValidation.swift in Sources */,
 				D07032C82BA4C15D00D1090D /* ViewController.swift in Sources */,
 				D07032C42BA4C15D00D1090D /* AppDelegate.swift in Sources */,
+				D07033192BAB10CA00D1090D /* UIView.swift in Sources */,
 				D07032E12BA52A0000D1090D /* InputViewModel.swift in Sources */,
 				D07032D82BA50CC400D1090D /* CustomInputView.swift in Sources */,
 				D07032C62BA4C15D00D1090D /* SceneDelegate.swift in Sources */,
