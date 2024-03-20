@@ -47,111 +47,59 @@ class CustomInputView: UIView {
         setupUI()
     }
 
-    // MARK: - Public Methods
-
-    func setTitle(_ title: String) {
-        titleLabel.text = title
-    }
-
-    func setPlaceholder(_ placeholder: String) {
-        textField.placeholder = placeholder
-    }
-
-    func setError(_ error: String?) {
-        if let error = error {
-            animateErrorView()
-            animateTextFieldBorderColor(toColor: UIColor.red)
-            errorLabel.text = error
-        } else {
-            resetErrorView()
-            animateTextFieldBorderColor(toColor: UIColor.gray)
-        }
-    }
-
-    private func animateErrorView() {
-        // Animate text field border color change
-        let borderColorAnimation = CABasicAnimation(keyPath: "borderColor")
-        borderColorAnimation.fromValue = UIColor.gray.cgColor
-        borderColorAnimation.toValue = UIColor.red.cgColor
-        borderColorAnimation.duration = 0.45
-        textField.layer.borderColor = UIColor.red.cgColor
-
-        // Combine animations
-        let animationGroup = CAAnimationGroup()
-        animationGroup.animations = [borderColorAnimation]
-        animationGroup.duration = 0.45
-        textField.layer.add(animationGroup, forKey: "errorAnimation")
-
-        // Animate error label appearance
-        errorLabel.isHidden = false
-        errorLabel.alpha = 0.0
-        UIView.animate(withDuration: 0.45) {
-            self.errorLabel.alpha = 1.0
-        }
-    }
-
-    private func resetErrorView() {
-        // Hide error label
-        UIView.animate(withDuration: 0.45) {
-            self.errorLabel.alpha = 0.0
-        }
-    }
-
-
-    private func updateErrorLabel(_ errorMessage: String?) {
-        errorLabel.isHidden = errorMessage == nil
-        setError(errorMessage)
-    }
-
-    func getText() -> String? {
-        return textField.text
-    }
-
-    func validateAndHandleError() {
-        let text = getText()
-        if text?.isEmpty ?? true {
-            animateErrorView()
-            setError(emptyFieldErrorMessage)
-        } else {
-            let errorMessage = validation?.validate(text)
-            setError(errorMessage)
-        }
-    }
-
-
     private func loadViewFromNib() -> UIView? {
         let nib = UINib(nibName: "CustomInputView", bundle: nil)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
     }
 
+    // MARK: - Public Methods
 
-    private func setupUI() {
-        textField.addTarget(self, action: #selector(textFieldDidEndEditing(_:)), for: .editingDidEnd)
-        // Set corner radius, border color, and width for the text field
-        textField.layer.cornerRadius = 8.0
-        textField.layer.borderColor = UIColor.gray.cgColor
-        textField.layer.borderWidth = 1
-        textField.delegate = self
-        errorLabel.alpha = 0.0
-    }
+     func setTitle(_ title: String) {
+         titleLabel.text = title
+     }
 
-    // MARK: - Animation
+     func setPlaceholder(_ placeholder: String) {
+         textField.placeholder = placeholder
+     }
 
-    private func animateTextFieldBorderColor(toColor color: UIColor) {
-        let animation = CABasicAnimation(keyPath: "borderColor")
-        animation.fromValue = textField.layer.borderColor
-        animation.toValue = color
-        animation.duration = 0.2
-        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-        textField.layer.add(animation, forKey: "borderColor")
+     func setError(_ error: String?) {
+         errorLabel.isHidden = error == nil
+         errorLabel.text = error
+         if let error = error {
+             animateErrorView(toColor: UIColor.red, errorMessage: error)
+         } else {
+             resetErrorView(toColor: UIColor.gray)
+         }
+     }
 
-        CATransaction.begin()
-        CATransaction.setDisableActions(true)
-        textField.layer.borderColor = color.cgColor
-        CATransaction.commit()
-    }
+     private func updateErrorLabel(_ errorMessage: String?) {
+         setError(errorMessage)
+     }
 
-}
+     func getText() -> String? {
+         return textField.text
+     }
+
+     func validateAndHandleError() {
+         let text = getText()
+         if text?.isEmpty ?? true {
+             setError(emptyFieldErrorMessage)
+         } else {
+             let errorMessage = validation?.validate(text)
+             setError(errorMessage)
+         }
+     }
+
+     private func setupUI() {
+         textField.addTarget(self, action: #selector(textFieldDidEndEditing(_:)), for: .editingDidEnd)
+         textField.layer.cornerRadius = 8.0
+         textField.layer.borderColor = UIColor.gray.cgColor
+         textField.layer.borderWidth = 1
+         textField.delegate = self
+         errorLabel.alpha = 0.0
+     }
+ }
+
 
 extension CustomInputView: UITextFieldDelegate {
 

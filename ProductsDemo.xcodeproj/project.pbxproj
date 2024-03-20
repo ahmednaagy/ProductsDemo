@@ -20,6 +20,8 @@
 		D07033192BAB10CA00D1090D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07033182BAB10CA00D1090D /* UIView.swift */; };
 		D070331B2BAB111B00D1090D /* CustomInputWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070331A2BAB111B00D1090D /* CustomInputWithButtonView.swift */; };
 		D070331D2BAB112300D1090D /* CustomInputWithButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */; };
+		D070331F2BAB14C800D1090D /* CustomInputView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070331E2BAB14C800D1090D /* CustomInputView+Extension.swift */; };
+		D07033212BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07033202BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D07033182BAB10CA00D1090D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D070331A2BAB111B00D1090D /* CustomInputWithButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputWithButtonView.swift; sourceTree = "<group>"; };
 		D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputWithButtonView.xib; sourceTree = "<group>"; };
+		D070331E2BAB14C800D1090D /* CustomInputView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomInputView+Extension.swift"; sourceTree = "<group>"; };
+		D07033202BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomInputWithButtonView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				D07033182BAB10CA00D1090D /* UIView.swift */,
+				D070331E2BAB14C800D1090D /* CustomInputView+Extension.swift */,
+				D07033202BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,9 +201,11 @@
 			files = (
 				D070331B2BAB111B00D1090D /* CustomInputWithButtonView.swift in Sources */,
 				D07032DF2BA5246900D1090D /* PhoneNumberValidation.swift in Sources */,
+				D07033212BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift in Sources */,
 				D07032C82BA4C15D00D1090D /* ViewController.swift in Sources */,
 				D07032C42BA4C15D00D1090D /* AppDelegate.swift in Sources */,
 				D07033192BAB10CA00D1090D /* UIView.swift in Sources */,
+				D070331F2BAB14C800D1090D /* CustomInputView+Extension.swift in Sources */,
 				D07032E12BA52A0000D1090D /* InputViewModel.swift in Sources */,
 				D07032D82BA50CC400D1090D /* CustomInputView.swift in Sources */,
 				D07032C62BA4C15D00D1090D /* SceneDelegate.swift in Sources */,
