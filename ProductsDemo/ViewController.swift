@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         addInputView(with: "Password", placeholder: "Enter password", validation: PasswordValidation(), emptyFieldErrorMessage: "Password is required")
         addInputView(with: "National ID", placeholder: "Enter National ID", validation: PasswordValidation(), emptyFieldErrorMessage: "National ID is required")
         addInputView(with: "Email", placeholder: "Enter Email", validation: PasswordValidation(), emptyFieldErrorMessage: "Email is required")
+        addTerms()
 
         addSubmitButton()
     }
@@ -44,6 +45,12 @@ class ViewController: UIViewController {
         firstMoneyCalculatorView.delegate = self
         firstMoneyCalculatorView.validation = PasswordValidation()
         parentStackView.addArrangedSubview(firstMoneyCalculatorView)
+    } 
+
+    fileprivate func addTerms() {
+        // Create and configure MoneyCalculatorView instances
+        let TermsAndConditionsView = TermsAndConditionsView()
+        parentStackView.addArrangedSubview(TermsAndConditionsView)
     }
 
     func addSubmitButton() {

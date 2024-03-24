@@ -22,6 +22,9 @@
 		D070331D2BAB112300D1090D /* CustomInputWithButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */; };
 		D070331F2BAB14C800D1090D /* CustomInputView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070331E2BAB14C800D1090D /* CustomInputView+Extension.swift */; };
 		D07033212BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07033202BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift */; };
+		D07033262BB03B6300D1090D /* TermsAndConditionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07033252BB03B6300D1090D /* TermsAndConditionsView.xib */; };
+		D07033292BB03C2300D1090D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07033282BB03C2300D1090D /* CheckBox.swift */; };
+		D070332B2BB050F400D1090D /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070332A2BB050F400D1090D /* TermsAndConditionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +37,7 @@
 		D07032CF2BA4C15F00D1090D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07032D12BA4C15F00D1090D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07032D72BA50CC400D1090D /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
-		D07032DB2BA50CF800D1090D /* CustomInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomInputView.xib; path = ../CustomInputView.xib; sourceTree = "<group>"; };
+		D07032DB2BA50CF800D1090D /* CustomInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputView.xib; sourceTree = "<group>"; };
 		D07032DE2BA5246900D1090D /* PhoneNumberValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidation.swift; sourceTree = "<group>"; };
 		D07032E02BA52A0000D1090D /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
 		D07033182BAB10CA00D1090D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -42,6 +45,9 @@
 		D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInputWithButtonView.xib; sourceTree = "<group>"; };
 		D070331E2BAB14C800D1090D /* CustomInputView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomInputView+Extension.swift"; sourceTree = "<group>"; };
 		D07033202BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomInputWithButtonView+Extension.swift"; sourceTree = "<group>"; };
+		D07033252BB03B6300D1090D /* TermsAndConditionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsView.xib; sourceTree = "<group>"; };
+		D07033282BB03C2300D1090D /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		D070332A2BB050F400D1090D /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		D07032C22BA4C15D00D1090D /* ProductsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D07033272BB03C0B00D1090D /* CustomComponents */,
 				D07033172BAB10BC00D1090D /* Extensions */,
 				D07033152BAB0FDC00D1090D /* Views */,
 				D07033162BAB10A200D1090D /* ViewModels */,
@@ -100,10 +107,9 @@
 		D07033152BAB0FDC00D1090D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D07032D72BA50CC400D1090D /* CustomInputView.swift */,
-				D07032DB2BA50CF800D1090D /* CustomInputView.xib */,
-				D070331A2BAB111B00D1090D /* CustomInputWithButtonView.swift */,
-				D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */,
+				D07033242BB03B4600D1090D /* TermsAndConditionsView */,
+				D07033222BB03B1600D1090D /* CustomInputView */,
+				D07033232BB03B2500D1090D /* CustomInputWithButtonView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +130,41 @@
 				D07033202BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D07033222BB03B1600D1090D /* CustomInputView */ = {
+			isa = PBXGroup;
+			children = (
+				D07032D72BA50CC400D1090D /* CustomInputView.swift */,
+				D07032DB2BA50CF800D1090D /* CustomInputView.xib */,
+			);
+			path = CustomInputView;
+			sourceTree = "<group>";
+		};
+		D07033232BB03B2500D1090D /* CustomInputWithButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				D070331A2BAB111B00D1090D /* CustomInputWithButtonView.swift */,
+				D070331C2BAB112300D1090D /* CustomInputWithButtonView.xib */,
+			);
+			path = CustomInputWithButtonView;
+			sourceTree = "<group>";
+		};
+		D07033242BB03B4600D1090D /* TermsAndConditionsView */ = {
+			isa = PBXGroup;
+			children = (
+				D07033252BB03B6300D1090D /* TermsAndConditionsView.xib */,
+				D070332A2BB050F400D1090D /* TermsAndConditionsView.swift */,
+			);
+			path = TermsAndConditionsView;
+			sourceTree = "<group>";
+		};
+		D07033272BB03C0B00D1090D /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				D07033282BB03C2300D1090D /* CheckBox.swift */,
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +229,7 @@
 				D07032CD2BA4C15F00D1090D /* Assets.xcassets in Resources */,
 				D07032DC2BA50CF800D1090D /* CustomInputView.xib in Resources */,
 				D07032CB2BA4C15D00D1090D /* Main.storyboard in Resources */,
+				D07033262BB03B6300D1090D /* TermsAndConditionsView.xib in Resources */,
 				D070331D2BAB112300D1090D /* CustomInputWithButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +243,9 @@
 			files = (
 				D070331B2BAB111B00D1090D /* CustomInputWithButtonView.swift in Sources */,
 				D07032DF2BA5246900D1090D /* PhoneNumberValidation.swift in Sources */,
+				D070332B2BB050F400D1090D /* TermsAndConditionsView.swift in Sources */,
 				D07033212BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift in Sources */,
+				D07033292BB03C2300D1090D /* CheckBox.swift in Sources */,
 				D07032C82BA4C15D00D1090D /* ViewController.swift in Sources */,
 				D07032C42BA4C15D00D1090D /* AppDelegate.swift in Sources */,
 				D07033192BAB10CA00D1090D /* UIView.swift in Sources */,
