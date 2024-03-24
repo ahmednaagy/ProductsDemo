@@ -62,6 +62,8 @@ class TermsAndConditionsView: UIView {
 
         print("Tapped")
 
+        delegate?.termsAndConditionsViewDidTap(self)
+
     }
     
 }

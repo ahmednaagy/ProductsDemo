@@ -50,6 +50,7 @@ class ViewController: UIViewController {
     fileprivate func addTerms() {
         // Create and configure MoneyCalculatorView instances
         let TermsAndConditionsView = TermsAndConditionsView()
+        TermsAndConditionsView.delegate = self
         parentStackView.addArrangedSubview(TermsAndConditionsView)
     }
 
@@ -102,5 +103,23 @@ class ViewController: UIViewController {
 extension ViewController: MoneyCalculatorViewDelegate {
     func calculateButtonTapped() {
         print("Button Tapped")
+    }
+}
+
+// MARK: - Terms and Conditions Delegate
+
+extension ViewController: TermsAndConditionsViewDelegate {
+    func termsAndConditionsViewDidTap(_ view: TermsAndConditionsView) {
+        let termsViewController = TermsViewController()
+        termsViewController.delegate = self
+        present(termsViewController, animated: true)
+    }
+}
+
+// MARK: - Terms and Conditions View Controller Delegate
+
+extension ViewController: TermsViewControllerDelegate {
+    func termsViewControllerDidDismiss() {
+        print("Change Check box image")
     }
 }

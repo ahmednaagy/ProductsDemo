@@ -25,6 +25,8 @@
 		D07033262BB03B6300D1090D /* TermsAndConditionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07033252BB03B6300D1090D /* TermsAndConditionsView.xib */; };
 		D07033292BB03C2300D1090D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07033282BB03C2300D1090D /* CheckBox.swift */; };
 		D070332B2BB050F400D1090D /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070332A2BB050F400D1090D /* TermsAndConditionsView.swift */; };
+		D070332F2BB0603800D1090D /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070332D2BB0603800D1090D /* TermsViewController.swift */; };
+		D07033302BB0603800D1090D /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D070332E2BB0603800D1090D /* TermsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		D07033252BB03B6300D1090D /* TermsAndConditionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsView.xib; sourceTree = "<group>"; };
 		D07033282BB03C2300D1090D /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		D070332A2BB050F400D1090D /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
+		D070332D2BB0603800D1090D /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		D070332E2BB0603800D1090D /* TermsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +91,7 @@
 				D07032DD2BA5245B00D1090D /* Validations */,
 				D07032C32BA4C15D00D1090D /* AppDelegate.swift */,
 				D07032C52BA4C15D00D1090D /* SceneDelegate.swift */,
-				D07032C72BA4C15D00D1090D /* ViewController.swift */,
-				D07032C92BA4C15D00D1090D /* Main.storyboard */,
+				D070332C2BB0601300D1090D /* Scenes */,
 				D07032CC2BA4C15F00D1090D /* Assets.xcassets */,
 				D07032CE2BA4C15F00D1090D /* LaunchScreen.storyboard */,
 				D07032D12BA4C15F00D1090D /* Info.plist */,
@@ -167,6 +170,17 @@
 			path = CustomComponents;
 			sourceTree = "<group>";
 		};
+		D070332C2BB0601300D1090D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D07032C72BA4C15D00D1090D /* ViewController.swift */,
+				D07032C92BA4C15D00D1090D /* Main.storyboard */,
+				D070332D2BB0603800D1090D /* TermsViewController.swift */,
+				D070332E2BB0603800D1090D /* TermsViewController.xib */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,6 +245,7 @@
 				D07032CB2BA4C15D00D1090D /* Main.storyboard in Resources */,
 				D07033262BB03B6300D1090D /* TermsAndConditionsView.xib in Resources */,
 				D070331D2BAB112300D1090D /* CustomInputWithButtonView.xib in Resources */,
+				D07033302BB0603800D1090D /* TermsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +259,7 @@
 				D070331B2BAB111B00D1090D /* CustomInputWithButtonView.swift in Sources */,
 				D07032DF2BA5246900D1090D /* PhoneNumberValidation.swift in Sources */,
 				D070332B2BB050F400D1090D /* TermsAndConditionsView.swift in Sources */,
+				D070332F2BB0603800D1090D /* TermsViewController.swift in Sources */,
 				D07033212BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift in Sources */,
 				D07033292BB03C2300D1090D /* CheckBox.swift in Sources */,
 				D07032C82BA4C15D00D1090D /* ViewController.swift in Sources */,
