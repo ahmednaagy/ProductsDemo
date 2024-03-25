@@ -19,17 +19,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         addCustomInputWithButtonView()
         addInputView(with: "Username", placeholder: "Enter username", validation: UsernameValidation(), emptyFieldErrorMessage: "Username is required")
-        addInputView(with: "Password", placeholder: "Enter password", validation: PasswordValidation(), emptyFieldErrorMessage: "Password is required")
-        addInputView(with: "National ID", placeholder: "Enter National ID", validation: PasswordValidation(), emptyFieldErrorMessage: "National ID is required")
-        addInputView(with: "Email", placeholder: "Enter Email", validation: PasswordValidation(), emptyFieldErrorMessage: "Email is required")
         addTerms()
+        addTerms()
+        addTerms()
+        addTerms()
+        addTerms()
+        addTerms()
+
+        addDocumentsView()
 
         addSubmitButton()
     }
 
     // MARK: - Helper Methods
 
-    func addInputView(with title: String, placeholder: String, validation: InputValidation, emptyFieldErrorMessage: String) {
+    fileprivate func addInputView(with title: String, placeholder: String, validation: InputValidation, emptyFieldErrorMessage: String) {
         let inputView = CustomInputView()
         inputView.setTitle(title)
         inputView.setPlaceholder(placeholder)
@@ -54,14 +58,19 @@ class ViewController: UIViewController {
         parentStackView.addArrangedSubview(TermsAndConditionsView)
     }
 
-    func addSubmitButton() {
+    fileprivate func addSubmitButton() {
         submitButton = UIButton(type: .system)
         submitButton.setTitle("Submit", for: .normal)
         submitButton.addTarget(self, action: #selector(submitButtonTapped(_:)), for: .touchUpInside)
-        // Add constraints to the submit button
         submitButton.translatesAutoresizingMaskIntoConstraints = false
         submitButton.heightAnchor.constraint(equalToConstant: 44).isActive = true // Adjust height as needed
         parentStackView.addArrangedSubview(submitButton)
+    }
+    
+    fileprivate func addDocumentsView() {
+        let documentsView = DocumentsView(frame: CGRect(x: 0, y: 0, width: 300, height: 400))
+        documentsView.delegate = self
+        parentStackView.addArrangedSubview(documentsView)
     }
 
 
@@ -120,6 +129,48 @@ extension ViewController: TermsAndConditionsViewDelegate {
 
 extension ViewController: TermsViewControllerDelegate {
     func termsViewControllerDidDismiss() {
-        print("Change Check box image")
+        print("Change Check Box")
     }
+}
+
+// MARK: - Image Picker Delegate Method
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+         picker.dismiss(animated: true, completion: nil)
+
+         // Handle selected photos
+         if let selectedImage = info[.originalImage] as? UIImage {
+             if let documentsView = parentStackView.subviews.compactMap({ $0 as? DocumentsView }).first {
+                 documentsView.images.append(selectedImage)
+                 documentsView.documentsCollectionView.reloadData()
+             }
+         }
+     }
+}
+
+// MARK: - Handle the documents view delegate methods
+
+extension ViewController: DocumentsViewDelegate {
+
+    func didSelectPhotos(_ photos: [UIImage]) {
+        // Handle the selected photos here
+        // You can perform any additional logic with the selected photos
+        print("Selected photos: \(photos)")
+
+        // If the number of selected photos exceeds 4, hide the "Add More" view
+        if photos.count > 4 {
+            if let documentsView = parentStackView.subviews.compactMap({ $0 as? DocumentsView }).first {
+                documentsView.addMoreView.isHidden = true
+            }
+        }
+    }
+
+    func didTapAddMore() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+
 }

@@ -27,6 +27,10 @@
 		D070332B2BB050F400D1090D /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070332A2BB050F400D1090D /* TermsAndConditionsView.swift */; };
 		D070332F2BB0603800D1090D /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D070332D2BB0603800D1090D /* TermsViewController.swift */; };
 		D07033302BB0603800D1090D /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D070332E2BB0603800D1090D /* TermsViewController.xib */; };
+		D07033332BB17DE200D1090D /* DocumentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07033322BB17DE200D1090D /* DocumentsView.xib */; };
+		D07033352BB17DF400D1090D /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07033342BB17DF400D1090D /* DocumentsView.swift */; };
+		D07033392BB2269F00D1090D /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07033372BB2269F00D1090D /* PhotosCell.swift */; };
+		D070333A2BB2269F00D1090D /* PhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07033382BB2269F00D1090D /* PhotosCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		D070332A2BB050F400D1090D /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
 		D070332D2BB0603800D1090D /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		D070332E2BB0603800D1090D /* TermsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
+		D07033322BB17DE200D1090D /* DocumentsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentsView.xib; sourceTree = "<group>"; };
+		D07033342BB17DF400D1090D /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
+		D07033372BB2269F00D1090D /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
+		D07033382BB2269F00D1090D /* PhotosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 		D07032C22BA4C15D00D1090D /* ProductsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D07033362BB2264C00D1090D /* Cells */,
 				D07033272BB03C0B00D1090D /* CustomComponents */,
 				D07033172BAB10BC00D1090D /* Extensions */,
 				D07033152BAB0FDC00D1090D /* Views */,
@@ -110,6 +119,7 @@
 		D07033152BAB0FDC00D1090D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D07033312BB17DC800D1090D /* DocumentsView */,
 				D07033242BB03B4600D1090D /* TermsAndConditionsView */,
 				D07033222BB03B1600D1090D /* CustomInputView */,
 				D07033232BB03B2500D1090D /* CustomInputWithButtonView */,
@@ -181,6 +191,24 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		D07033312BB17DC800D1090D /* DocumentsView */ = {
+			isa = PBXGroup;
+			children = (
+				D07033322BB17DE200D1090D /* DocumentsView.xib */,
+				D07033342BB17DF400D1090D /* DocumentsView.swift */,
+			);
+			path = DocumentsView;
+			sourceTree = "<group>";
+		};
+		D07033362BB2264C00D1090D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D07033372BB2269F00D1090D /* PhotosCell.swift */,
+				D07033382BB2269F00D1090D /* PhotosCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,9 +271,11 @@
 				D07032CD2BA4C15F00D1090D /* Assets.xcassets in Resources */,
 				D07032DC2BA50CF800D1090D /* CustomInputView.xib in Resources */,
 				D07032CB2BA4C15D00D1090D /* Main.storyboard in Resources */,
+				D070333A2BB2269F00D1090D /* PhotosCell.xib in Resources */,
 				D07033262BB03B6300D1090D /* TermsAndConditionsView.xib in Resources */,
 				D070331D2BAB112300D1090D /* CustomInputWithButtonView.xib in Resources */,
 				D07033302BB0603800D1090D /* TermsViewController.xib in Resources */,
+				D07033332BB17DE200D1090D /* DocumentsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +294,11 @@
 				D07033292BB03C2300D1090D /* CheckBox.swift in Sources */,
 				D07032C82BA4C15D00D1090D /* ViewController.swift in Sources */,
 				D07032C42BA4C15D00D1090D /* AppDelegate.swift in Sources */,
+				D07033392BB2269F00D1090D /* PhotosCell.swift in Sources */,
 				D07033192BAB10CA00D1090D /* UIView.swift in Sources */,
 				D070331F2BAB14C800D1090D /* CustomInputView+Extension.swift in Sources */,
 				D07032E12BA52A0000D1090D /* InputViewModel.swift in Sources */,
+				D07033352BB17DF400D1090D /* DocumentsView.swift in Sources */,
 				D07032D82BA50CC400D1090D /* CustomInputView.swift in Sources */,
 				D07032C62BA4C15D00D1090D /* SceneDelegate.swift in Sources */,
 			);
