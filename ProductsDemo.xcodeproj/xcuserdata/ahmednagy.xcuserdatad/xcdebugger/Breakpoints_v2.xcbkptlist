@@ -179,47 +179,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "56E8267C-F394-46E1-A877-D31844DD1E44"
+            uuid = "FFB7581D-4242-4CAE-9887-AB925D3DF13A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProductsDemo/Scenes/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "addSubmitButton()"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "contactPickerViewDidTapContactsButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A58537E1-FD65-4C3F-BA6F-FFEB09A66303"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Scenes/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "contactPickerView(_:didSelectContact:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68DEBA66-C132-4139-97DD-26122CD68AEA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "contactPicker(_:didSelect:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "56E8267C-F394-46E1-A877-D31844DD1E44 - 34bb90c64a4c957b"
+                  uuid = "68DEBA66-C132-4139-97DD-26122CD68AEA - 6808de8f24cdf972"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ProductsDemo.ViewController.addSubmitButton() -&gt; ()"
+                  symbolName = "ProductsDemo.ProductsContactsView.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
                   moduleName = "ProductsDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Scenes/ViewController.swift"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "372">
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "556">
                </Location>
                <Location
-                  uuid = "56E8267C-F394-46E1-A877-D31844DD1E44 - 34bb90c64a4c957b"
+                  uuid = "68DEBA66-C132-4139-97DD-26122CD68AEA - 6808de8f24cdf972"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ProductsDemo.ViewController.addSubmitButton() -&gt; ()"
+                  symbolName = "ProductsDemo.ProductsContactsView.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
                   moduleName = "ProductsDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Scenes/ViewController.swift"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "1012">
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "104">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -227,49 +259,529 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F29D4F9D-BF29-4A3B-A8D3-42E89BBB35C5"
+            uuid = "9CA568D9-5214-49B3-B7C6-3C2C41A8A4AF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProductsDemo/Scenes/ViewController.swift"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "addSubmitButton()"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "contactPicker(_:didSelect:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "F29D4F9D-BF29-4A3B-A8D3-42E89BBB35C5 - 34bb90c64a4c953d"
+                  uuid = "9CA568D9-5214-49B3-B7C6-3C2C41A8A4AF - 6808de8f24cdf893"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ProductsDemo.ViewController.addSubmitButton() -&gt; ()"
+                  symbolName = "ProductsDemo.ProductsContactsView.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
                   moduleName = "ProductsDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Scenes/ViewController.swift"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "580">
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "780">
                </Location>
                <Location
-                  uuid = "F29D4F9D-BF29-4A3B-A8D3-42E89BBB35C5 - 34bb90c64a4c955c"
+                  uuid = "9CA568D9-5214-49B3-B7C6-3C2C41A8A4AF - 6808de8f24cdf893"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ProductsDemo.ViewController.addSubmitButton() -&gt; ()"
+                  symbolName = "ProductsDemo.ProductsContactsView.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
                   moduleName = "ProductsDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Scenes/ViewController.swift"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "1312">
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "556">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3A3A960-4752-4B60-A3FB-1FAA5F061FE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "contactPicker(_:didSelect:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E3A3A960-4752-4B60-A3FB-1FAA5F061FE6 - 6808de8f24cdf8d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "956">
+               </Location>
+               <Location
+                  uuid = "E3A3A960-4752-4B60-A3FB-1FAA5F061FE6 - 6808de8f24cdf8d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "808">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A254E857-581D-4CF7-BD1D-AA6E106B5E1C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "contactPicker(_:didSelect:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A254E857-581D-4CF7-BD1D-AA6E106B5E1C - 6808de8f24cdf8b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "808">
+               </Location>
+               <Location
+                  uuid = "A254E857-581D-4CF7-BD1D-AA6E106B5E1C - 6808de8f24cdf8b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "780">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B41B061B-8424-43A1-A3F1-8DE7F8EABCF5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "validateText(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B41B061B-8424-43A1-A3F1-8DE7F8EABCF5 - 4ed8badaf7f68ed9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "568">
+               </Location>
+               <Location
+                  uuid = "B41B061B-8424-43A1-A3F1-8DE7F8EABCF5 - 4ed8badaf7f68ed9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BCEE9A9-E92E-42A1-B71C-AA22E1D260A7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "validateText(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7BCEE9A9-E92E-42A1-B71C-AA22E1D260A7 - 4ed8badaf7f68eb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  uuid = "7BCEE9A9-E92E-42A1-B71C-AA22E1D260A7 - 4ed8badaf7f68eb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "568">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "625BEBEA-3DE7-40C0-AAFF-3AF92AEA1BE4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "validateText(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "625BEBEA-3DE7-40C0-AAFF-3AF92AEA1BE4 - 4ed8badaf7f68f5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "625BEBEA-3DE7-40C0-AAFF-3AF92AEA1BE4 - 4ed8badaf7f68e9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "596">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07523ECE-6684-4B77-B4D2-AB0347EF574B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "validateText(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07523ECE-6684-4B77-B4D2-AB0347EF574B - 4ed8badaf7f68f3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "07523ECE-6684-4B77-B4D2-AB0347EF574B - 4ed8badaf7f68f3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D4C97E1-7197-430B-9727-9B28D58479D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "validateText(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2D4C97E1-7197-430B-9727-9B28D58479D1 - 4ed8badaf7f68f13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "512">
+               </Location>
+               <Location
+                  uuid = "2D4C97E1-7197-430B-9727-9B28D58479D1 - 4ed8badaf7f68f13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E7FBE7F-3453-448A-A1A4-7F14429E91A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "validateText(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9E7FBE7F-3453-448A-A1A4-7F14429E91A8 - 4ed8badaf7f68ff2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "9E7FBE7F-3453-448A-A1A4-7F14429E91A8 - 4ed8badaf7f68ff2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.ProductsContactsView.validateText(Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Views/ProductsContactsView/ProductsContactsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "512">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DF7F1B2-7362-4462-BD06-4DC55829B593"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Validations/PhoneNumberValidation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "validate(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F849243B-953B-428C-B4DE-B889C1A0EEB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Validations/PhoneNumberValidation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "validate(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F849243B-953B-428C-B4DE-B889C1A0EEB0 - b51bdd531da8d776"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.PhoneNumberValidation.validate(Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Validations/PhoneNumberValidation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "F849243B-953B-428C-B4DE-B889C1A0EEB0 - b51bdd531da8d776"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProductsDemo.PhoneNumberValidation.validate(Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "ProductsDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmednagy/Desktop/Personal/Mini-Projects/ProductsDemo/ProductsDemo/Validations/PhoneNumberValidation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89373A06-803A-457C-8ACF-8FA2428D77B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Validations/PhoneNumberValidation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "validate(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F05A9267-F960-424F-B4AB-3370A6DF595D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductsDemo/Validations/PhoneNumberValidation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "validate(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

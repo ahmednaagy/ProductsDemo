@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04661E12BBA343900F37B90 /* ProductsContactsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04661E02BBA343900F37B90 /* ProductsContactsView.xib */; };
+		D04661E32BBA344600F37B90 /* ProductsContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04661E22BBA344600F37B90 /* ProductsContactsView.swift */; };
+		D04661E52BBA370700F37B90 /* ProductsContactsView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04661E42BBA370700F37B90 /* ProductsContactsView+Ext.swift */; };
 		D07032C42BA4C15D00D1090D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07032C32BA4C15D00D1090D /* AppDelegate.swift */; };
 		D07032C62BA4C15D00D1090D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07032C52BA4C15D00D1090D /* SceneDelegate.swift */; };
 		D07032C82BA4C15D00D1090D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07032C72BA4C15D00D1090D /* ViewController.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D04661E02BBA343900F37B90 /* ProductsContactsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsContactsView.xib; sourceTree = "<group>"; };
+		D04661E22BBA344600F37B90 /* ProductsContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsContactsView.swift; sourceTree = "<group>"; };
+		D04661E42BBA370700F37B90 /* ProductsContactsView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsContactsView+Ext.swift"; sourceTree = "<group>"; };
 		D07032C02BA4C15D00D1090D /* ProductsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07032C32BA4C15D00D1090D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D07032C52BA4C15D00D1090D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D04661DF2BBA342800F37B90 /* ProductsContactsView */ = {
+			isa = PBXGroup;
+			children = (
+				D04661E02BBA343900F37B90 /* ProductsContactsView.xib */,
+				D04661E22BBA344600F37B90 /* ProductsContactsView.swift */,
+				D04661E42BBA370700F37B90 /* ProductsContactsView+Ext.swift */,
+			);
+			path = ProductsContactsView;
+			sourceTree = "<group>";
+		};
 		D07032B72BA4C15D00D1090D = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +135,7 @@
 		D07033152BAB0FDC00D1090D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D04661DF2BBA342800F37B90 /* ProductsContactsView */,
 				D07033312BB17DC800D1090D /* DocumentsView */,
 				D07033242BB03B4600D1090D /* TermsAndConditionsView */,
 				D07033222BB03B1600D1090D /* CustomInputView */,
@@ -276,6 +293,7 @@
 				D070331D2BAB112300D1090D /* CustomInputWithButtonView.xib in Resources */,
 				D07033302BB0603800D1090D /* TermsViewController.xib in Resources */,
 				D07033332BB17DE200D1090D /* DocumentsView.xib in Resources */,
+				D04661E12BBA343900F37B90 /* ProductsContactsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +307,7 @@
 				D070331B2BAB111B00D1090D /* CustomInputWithButtonView.swift in Sources */,
 				D07032DF2BA5246900D1090D /* PhoneNumberValidation.swift in Sources */,
 				D070332B2BB050F400D1090D /* TermsAndConditionsView.swift in Sources */,
+				D04661E32BBA344600F37B90 /* ProductsContactsView.swift in Sources */,
 				D070332F2BB0603800D1090D /* TermsViewController.swift in Sources */,
 				D07033212BAB18C200D1090D /* CustomInputWithButtonView+Extension.swift in Sources */,
 				D07033292BB03C2300D1090D /* CheckBox.swift in Sources */,
@@ -301,6 +320,7 @@
 				D07033352BB17DF400D1090D /* DocumentsView.swift in Sources */,
 				D07032D82BA50CC400D1090D /* CustomInputView.swift in Sources */,
 				D07032C62BA4C15D00D1090D /* SceneDelegate.swift in Sources */,
+				D04661E52BBA370700F37B90 /* ProductsContactsView+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

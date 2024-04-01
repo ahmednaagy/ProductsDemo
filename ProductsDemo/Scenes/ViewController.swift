@@ -19,15 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         addCustomInputWithButtonView()
         addInputView(with: "Username", placeholder: "Enter username", validation: UsernameValidation(), emptyFieldErrorMessage: "Username is required")
+        addInputView(with: "Password", placeholder: "Enter username", validation: PasswordValidation(), emptyFieldErrorMessage: "Username is required")
+        addContactsView(with: "Phone Number", placeholder: "Please enter you Phone Number", validation: PhoneNumberValidation(), emptyFieldErrorMessage: "Phone Number field Should Not Be Empty.")
         addTerms()
-        addTerms()
-        addTerms()
-        addTerms()
-        addTerms()
-        addTerms()
-
         addDocumentsView()
-
         addSubmitButton()
     }
 
@@ -55,6 +50,7 @@ class ViewController: UIViewController {
         // Create and configure MoneyCalculatorView instances
         let TermsAndConditionsView = TermsAndConditionsView()
         TermsAndConditionsView.delegate = self
+        TermsAndConditionsView.tag = 5
         parentStackView.addArrangedSubview(TermsAndConditionsView)
     }
 
@@ -71,6 +67,16 @@ class ViewController: UIViewController {
         let documentsView = DocumentsView(frame: CGRect(x: 0, y: 0, width: 300, height: 400))
         documentsView.delegate = self
         parentStackView.addArrangedSubview(documentsView)
+    }
+
+    fileprivate func addContactsView(with title: String, placeholder: String, validation: InputValidation, emptyFieldErrorMessage: String) {
+        let contactsView = ProductsContactsView()
+        contactsView.setTitle(title)
+        contactsView.setPlaceholder(placeholder)
+        contactsView.validation = validation
+        contactsView.emptyFieldErrorMessage = emptyFieldErrorMessage
+        contactsView.delegate = self
+        parentStackView.addArrangedSubview(contactsView)
     }
 
 
@@ -139,19 +145,33 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
          picker.dismiss(animated: true, completion: nil)
 
+        let termsView = parentStackView.viewWithTag(5) as? TermsAndConditionsView
+        print("_-----------------------------")
+        print(termsView?.errorLabel.text)
+
          // Handle selected photos
          if let selectedImage = info[.originalImage] as? UIImage {
              if let documentsView = parentStackView.subviews.compactMap({ $0 as? DocumentsView }).first {
                  documentsView.images.append(selectedImage)
-                 documentsView.documentsCollectionView.reloadData()
+                 documentsView.showSelectedImages()
+                 documentsView.reloadCollectionView()
              }
          }
+        
      }
 }
 
 // MARK: - Handle the documents view delegate methods
 
 extension ViewController: DocumentsViewDelegate {
+
+    func didTapUploadPhoto() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+
 
     func didSelectPhotos(_ photos: [UIImage]) {
         // Handle the selected photos here
@@ -174,3 +194,15 @@ extension ViewController: DocumentsViewDelegate {
     }
 
 }
+
+extension ViewController: ContactPickerViewDelegate {
+    func contactPickerViewDidTapContactsButton(_ contactPickerView: ProductsContactsView) {
+        present(contactPickerView.contactsPicker, animated: true, completion: nil)
+    }
+
+    func contactPickerView(_ contactPickerView: ProductsContactsView, didSelectContact phoneNumber: String) {
+        // Handle the selected contact's phone number
+        print("Handle the selected contact's phone number")
+    }
+}
+
